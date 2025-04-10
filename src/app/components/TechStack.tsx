@@ -10,8 +10,8 @@ const technologies = [
 export default function TechStack() {
     return (
         <div id="techstack" className="flex flex-col items-center justify-center mt-32 md:mt-128 h-full">
-            <h1 className="text-5xl font-bold">My current Tech Stack</h1>
-            <div className="flex flex-wrap gap-4 mt-8">
+            <h1 className="text-5xl font-bold text-center">My current Tech Stack</h1>
+            <div className="flex flex-wrap gap-4 mt-8 justify-center items-center">
                 {technologies.map((tech) => (
                 <TechCard key={tech.alt} {...tech} />
                 ))}
