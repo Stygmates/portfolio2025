@@ -48,7 +48,7 @@ function ExperienceTabs() {
     }
   
     return (
-      <div className="w-full max-w-3xl mx-auto mt-8 h-300 md:h100">
+      <div className="w-full max-w-3xl mx-auto mt-8 h-200 md:h-100">
         <div className="flex space-x-4 border-b mb-4">
           {Object.keys(experienceItems).map((key) => (
             <button
