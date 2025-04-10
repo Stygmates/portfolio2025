@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function AboutMe() {
-    const texts = [" Build ", " Break ", " Fix ", " Do "];
+    const texts = [" Build ", " Deploy "," Break ", " Fix ", " Do "];
 
     const [index, setIndex] = useState(0);
 
