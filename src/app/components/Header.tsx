@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Header() {
     return (
-        <header className="bg-gray-950 p-4 md:mx-64 font-bold fixed top-0 left-0 right-0 z-10">
+        <header className="bg-gray-950 p-4 font-bold fixed top-0 left-0 right-0 z-10">
             <nav className='flex flex-row md:justify-between gap-8 justify-center'>
                 <div className='hidden md:flex'>
                     <h1 className="text-lg font-bold">Tan Dat Truong</h1>
@@ -18,7 +18,7 @@ export default function Header() {
                         <li><a href="#projects" className=" hover:text-blue-400">Projects</a></li>
                     </ul>
                 </div>
-                <ul className="flex gap-4">
+                <ul className="flex gap-4 items-center">
                     <li><a href="mailto:admin@tdtruong.com"><EmailIcon sx={{ color: 'white' }}/></a></li>
                     <li><a href="https://www.linkedin.com/in/tan-dat-truong/"><LinkedInIcon sx={{ color: 'white' }} /></a></li>
                     <li><a href="https://github.com/stygmates/"><GitHubIcon sx={{ color: 'white' }}/></a></li>
