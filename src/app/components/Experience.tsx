@@ -30,16 +30,13 @@ const experienceItems = {
             "Added security features to the frontend like CSRF protection or reCAPTCHA."
         ]
     },
-    IGBMC2018:{
+    IGBMCSummer:{
         jobTitle: "Continuous Integration Intern",
-        duration: "Summer 2018",
-        description: ["Developed a Continuous Integration tool similar to TravisCI, in Crystal"]
-    },
-
-    IGBMC2017:{
-        jobTitle: "Python Developer Intern",
-        duration: "Summer 2017",
-        description: ["Developed an application in Python to manage and visualize images acquired by their microscope."]
+        duration: "Summer 2017 and Summer 2018",
+        description: [
+          "Summer 2018: Developed a Continuous Integration tool similar to TravisCI, in Crystal.",
+          "Summer 2017: Developed an application in Python to manage and visualize images acquired by their microscope."
+        ]
     },
 }
 
