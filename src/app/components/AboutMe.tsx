@@ -30,7 +30,7 @@ export default function AboutMe() {
         stuff.</div>
         <div className="text-xl">
             <span>I&apos;m a software engineer from Strasbourg, France. I build apps, nowadays mainly</span>
-            <Image src="/rust.svg" alt="Rust" width={24} className="inline align-baseline mx-1"/><span> apps.</span>
+            <Image src="/rust.svg" alt="Rust" width={24} height={24} className="inline align-baseline mx-1"/><span> apps.</span>
         </div>
         <a href="mailto:admin@tdtruong.com" className="border border-solid border-blue-400 rounded-md p-4 text-blue-400 my-4 hover:brightness-125"><EmailIcon sx={{ color: 'oklch(70.7% 0.165 254.624)' }} /> Say hi! </a>
     </div>)
