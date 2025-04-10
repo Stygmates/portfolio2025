@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 export default function Experience(){
-    let [active, setActive] = useState("igbmc");
-    let buttonBase = "border-blue-400 p-4";
     return (<div id="experience" className="flex flex-col items-center justify-center mt-32 md:mt-64 h-full">
         <div className="text-5xl font-bold">Experience</div>
         <ExperienceTabs/>

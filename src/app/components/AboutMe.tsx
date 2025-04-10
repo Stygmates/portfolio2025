@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import EmailIcon from '@mui/icons-material/Email';
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -14,11 +15,11 @@ export default function AboutMe() {
         setIndex((i) => (i + 1) % texts.length);
       }, 2000); // Change text every 2s
       return () => clearInterval(timer);
-    }, []);
+    }, [texts.length]);
     
     return(
     <div id="aboutme" className="flex font-bold flex-col items-center justify-center mt-32 md:mt-96 h-full">
-     <div className="text-5xl">Hello world, I'm <span className="text-blue-400">Tan Dat</span>.
+     <div className="text-5xl">Hello world, I&apos;m <span className="text-blue-400">Tan Dat</span>.
         <AnimatePresence mode="wait" >
         <motion.div className="inline" initial={{ opacity: 0 }} animate={{ opacity: [0, 1, 0] }} transition={{ duration: 1, repeat: Infinity }}>|</motion.div>
         </AnimatePresence></div>
@@ -28,8 +29,8 @@ export default function AboutMe() {
         </AnimatePresence>
         stuff.</div>
         <div className="text-xl">
-            <span>I'm a software engineer from Strasbourg, France. I build apps, nowadays mainly</span>
-            <img src="/rust.svg" alt="Rust" width={24} className="inline align-baseline mx-1"/><span> apps.</span>
+            <span>I&apos;m a software engineer from Strasbourg, France. I build apps, nowadays mainly</span>
+            <Image src="/rust.svg" alt="Rust" width={24} className="inline align-baseline mx-1"/><span> apps.</span>
         </div>
         <a href="mailto:admin@tdtruong.com" className="border border-solid border-blue-400 rounded-md p-4 text-blue-400 my-4 hover:brightness-125"><EmailIcon sx={{ color: 'oklch(70.7% 0.165 254.624)' }} /> Say hi! </a>
     </div>)

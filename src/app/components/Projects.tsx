@@ -1,6 +1,6 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
-import { desc } from 'framer-motion/client';
+import Image from 'next/image';
 
 const projects = [
     {
@@ -95,14 +95,14 @@ function ProjectTile({ title, description, githubLink, icons, link, storybookLin
                         rel="noopener noreferrer"
                         className="mt-2 text-sm text-blue-400 hover:underline"
                     >
-                        <img src="/storybook.svg" width={32} height={32} />
+                        <Image src="/storybook.svg" alt="storybook" width={32} height={32} />
                     </a>
                 )}
             </div>
             <div className="text-2xl text-center">{title}</div>
             <div className="text-md text-center text-gray-300 flex-1">{description}</div>
-            <div className="flex gap-4">{icons.map((icon, index) => (
-                <img src={`/${icon}`} width={32} height={32} />
+            <div className="flex gap-4">{icons.map((icon) => (
+                <Image src={`/${icon}`} key={`${title}-${icon}`} alt={icon} width={32} height={32} />
             ))}</div>
 
         </div>
