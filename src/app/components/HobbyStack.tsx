@@ -11,8 +11,8 @@ const hobbies = [
 export default function HobbyStack() {
     return (
         <div id="techstack" className="flex flex-col items-center justify-center h-full">
-            <h1 className="text-5xl font-bold">My current Hobby Stack</h1>
-            <div className="flex flex-wrap gap-4 mt-8">
+            <h1 className="text-5xl font-bold text-center">My current Hobby Stack</h1>
+            <div className="flex flex-wrap gap-4 mt-8 justify-center">
                 {hobbies.map((hobby) => (
                     <HobbyCard key={hobby.alt} {...hobby} />
                 ))}

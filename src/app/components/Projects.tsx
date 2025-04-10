@@ -68,7 +68,7 @@ type ProjectTileProps = {
 
 function ProjectTile({ title, description, githubLink, icons, link, storybookLink }: ProjectTileProps) {
     return (
-        <div className="border border-solid rounded-2xl flex flex-col gap-2 justify-center items-center p-4 font-semibold w-96 h-96 hover:brightness-125 hover:scale-110 text-white shadow-md transition-all duration-300">
+        <div className="border border-solid rounded-2xl flex flex-col gap-2 justify-center items-center p-4 font-semibold w-80 h-80 md:w-96 md:w-96 hover:brightness-125 hover:scale-110 text-white shadow-md transition-all duration-300">
             <div className='flex gap-4'>
                 <a
                     href={githubLink}

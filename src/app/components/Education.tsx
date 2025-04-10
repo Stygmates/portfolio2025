@@ -55,7 +55,7 @@ function EducationTabs() {
           ))}
         </div>
   
-        <div>
+        <div className="mx-8">
           <h3 className="text-xl font-semibold">{educationItems[activeTab].jobTitle}</h3>
           <p className="text-sm text-gray-500 mb-4">{educationItems[activeTab].duration}</p>
           <motion.div key={activeTab} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}} className="list-disc space-y-2">

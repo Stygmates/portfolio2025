@@ -48,7 +48,7 @@ function ExperienceTabs() {
     }
   
     return (
-      <div className="w-full max-w-3xl mx-auto h-100 mt-8">
+      <div className="w-full max-w-3xl mx-auto mt-8 h-300 md:h100">
         <div className="flex space-x-4 border-b mb-4">
           {Object.keys(experienceItems).map((key) => (
             <button
@@ -65,7 +65,7 @@ function ExperienceTabs() {
           ))}
         </div>
   
-        <div>
+        <div className="mx-8">
           <h3 className="text-xl font-semibold">{experienceItems[activeTab].jobTitle}</h3>
           <p className="text-sm text-gray-500 mb-4">{experienceItems[activeTab].duration}</p>
           <motion.ul key={activeTab} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}} className="list-disc pl-5 space-y-2">
