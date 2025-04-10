@@ -17,7 +17,7 @@ const projects = [
     },
     {
         title:"Entertainment app",
-        description: "This is a challenge from the website frontendmentor.io to create a website that displays movies and TV shows. It is built with Next.js and css, there is also an associated storybook available.",   
+        description: "This is a challenge from the website frontendmentor.io to create a website that displays movies and TV shows. A Figma sketch is supplied and the goal is to implement it as close to the sketch as possible. It is built with Next.js and css, there is also an associated storybook available.",   
         icons: ["nextjs.svg"],
         githubLink: "https://github.com/Stygmates/entertainment-web-app/",
         link: "https://entertainment.tdtruong.com",
