@@ -18,7 +18,7 @@ export default function AboutMe() {
     }, [texts.length]);
     
     return(
-    <div id="aboutme" className="flex font-bold flex-col items-center justify-center mt-32 md:mt-96 h-full">
+    <div className="flex font-bold flex-col items-center justify-center mt-32 md:mt-96 h-full">
      <div className="text-5xl text-center">Hello world,<br/>I&apos;m <span className="text-blue-400">Tan Dat</span>.
         <AnimatePresence mode="wait" >
         <motion.div className="inline" initial={{ opacity: 0 }} animate={{ opacity: [0, 1, 0] }} transition={{ duration: 1, repeat: Infinity }}>|</motion.div>

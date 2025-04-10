@@ -11,7 +11,6 @@ export default function Header() {
                     <h1 className="text-lg font-bold">Tan Dat Truong</h1>
                     <ul className="text-sm space-x-8 justify-center items-center ml-8 flex">
                         <li><a href="#" className=" hover:text-blue-400">Home</a></li>
-                        <li><a href="#aboutme" className=" hover:text-blue-400">About</a></li>
                         <li><a href="#techstack" className=" hover:text-blue-400">Tech Stack</a></li>
                         <li><a href="#experience" className=" hover:text-blue-400">Experience</a></li>
                         <li><a href="#education" className=" hover:text-blue-400">Education</a></li>
