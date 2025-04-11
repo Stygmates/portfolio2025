@@ -4,12 +4,13 @@ const technologies = [
     { src: '/rust.svg', alt: 'Rust', label: 'Rust' },
     { src: '/nextjs.svg', alt: 'Next.js', label: 'NextJS' },
     { src: '/tailwind.svg', alt: 'Tailwind CSS', label: 'TailwindCSS' },
+    { src: '/storybook.svg', alt: 'Storybook', label: 'Storybook'},
     { src: '/docker.svg', alt: 'Docker', label: 'Docker' },
 ];
 
 export default function TechStack() {
     return (
-        <div id="techstack" className="flex flex-col items-center justify-center mt-32 md:mt-128 h-full">
+        <div id="techstack" className="flex flex-col items-center justify-center mt-64 md:mt-128 lg:mt-192 h-full">
             <h1 className="text-5xl font-bold text-center">My current Tech Stack</h1>
             <div className="flex flex-wrap gap-4 mt-8 justify-center items-center">
                 {technologies.map((tech) => (
